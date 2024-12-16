@@ -1,0 +1,78 @@
+/* Desktop-specific styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #000; /* 背景改为黑色 */
+    color: #D8BFD8; /* 字体改为淡紫色 */
+}
+
+header {
+    background: linear-gradient(90deg, #4A90E2, #8A2BE2);
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    border-bottom: 2px solid #8A2BE2;
+}
+
+header h1 {
+    margin: 0;
+    text-shadow: 2px 2px 5px #8A2BE2;
+}
+
+nav .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav .menu li {
+    margin: 0 15px;
+}
+
+nav .menu a {
+    text-decoration: none;
+    color: #D8BFD8;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav .menu a:hover {
+    color: #4A90E2; /* 鼠标悬停效果 */
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.1); /* 半透明背景 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02); /* 鼠标悬停时放大 */
+    box-shadow: 0 6px 20px rgba(138, 43, 226, 0.7);
+}
+
+section img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #8A2BE2;
+}
+
+footer {
+    background: #222;
+    color: #D8BFD8;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #8A2BE2;
+}
